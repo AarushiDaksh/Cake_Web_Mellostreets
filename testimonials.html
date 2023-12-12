@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Cake Website</title>
+    
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --modarate-violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-white: rgba(255, 255, 255, 0.5);
+  --black: hsl(0, 0%, 0%);
+  --body-font: "Barlow Semi Condensed", sans-serif;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.ftco-navbar-light {
+  background: transparent !important;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0;
+}
+
+.ftco-navbar-light .navbar-brand {
+  color: #ffffff;
+}
+
+.ftco-navbar-light .navbar-brand:hover,
+.ftco-navbar-light .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  font-size: 14px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: #ffffff;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  background: #c8a97e;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: #c8a97e;
+}
+
+/* ***************this below written code will work when our page content goes more than screen size or when it is scrolled */
+
+.ftco-navbar-light.scrolled .nav-item.active > a {
+  color: #c8a97e !important;
+}
+
+.ftco-navbar-light.scrolled .nav-item.cta > a {
+  color: #ffffff !important;
+  background: #c8a97e;
+  border: none !important;
+  border-radius: 0;
+}
+.ftco-navbar-light.scrolled .nav-item.cta > a span {
+  display: inline-block;
+  color: #ffffff !important;
+}
+
+.ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+  border-color: #c8a97e;
+}
+
+.ftco-navbar-light.scrolled .nav-link {
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
+  color: #000000 !important;
+}
+
+.ftco-navbar-light.scrolled .nav-link.active {
+  color: #c8a97e !important;
+}
+
+.ftco-navbar-light.scrolled.awake {
+  margin-top: 0px;
+  transition: 0.3s all ease-out;
+}
+
+.ftco-navbar-light.scrolled.sleep {
+  transition: 0.3s all ease-out;
+}
+.ftco-navbar-light.scrolled .navbar-brand {
+  color: #000000;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 0.81rem;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  min-height: 100vh;
+  background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);
+  font-family: var(--body-font);
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/** Testimonials Section **/
+
+.testimonials-section {
+  margin: 0 auto;
+  margin-top: 12.692rem;
+  margin-bottom: 12.692rem;
+  max-width: 77.083%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.308rem;
+  justify-content: center;
+}
+
+/** Testimonial Sections **/
+
+.testimonials-section > * {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 10px;
+  padding: 1.9rem 2.6rem;
+}
+
+.section-1,
+.section-2,
+.section-5 {
+  color: var(--white);
+}
+.section-3,
+.section-4 {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.section-1 {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 18%;
+  background-size: 100px;
+  grid-column: span 2;
+  background-color: var(--modarate-violet);
+}
+.section-2 {
+  background-color: var(--dark-grayish-blue);
+}
+.section-3 {
+  grid-row: span 2;
+}
+.section-3 .highlight-content p {
+  color: var(--dark-grayish-blue);
+}
+.section-5 {
+  background-color: var(--dark-blackish-blue);
+  grid-column: span 2;
+}
+
+/** Author **/
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-1 .author-info,
+.section-2 .author-info,
+.section-5 .author-info {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.section-3 .author-info,
+.section-4 .author-info .section-3 .highlight-content,
+.section-4 .highlight-content {
+  color: var(--dark-grayish-blue);
+}
+
+.author-describtion,
+.content {
+  opacity: 50%;
+}
+.author-describtion {
+  font-size: 11px;
+}
+
+/** Author Images **/
+
+.author-img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.section-1 .author-img,
+.section-5 .author-img {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.section-5 .author-img {
+  border-color: var(--modarate-violet);
+}
+
+.section-1 .author-img {
+  border-color: var(--light-white);
+}
+
+/** Hightlight Content **/
+.highlight-content {
+  font-size: 1.5rem;
+  word-spacing: 1.7px;
+}
+.highlight-content p {
+  font-weight: 600;
+}
+
+/** Content **/
+
+.content {
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  line-height: 1.4rem;
+}
+
+/** Responsive **/
+
+@media screen and (max-width: 1201px) {
+  .testimonials-section {
+    margin-top: 5.385rem;
+  }
+  .section-2,
+  .section-4 {
+    grid-column: span 2;
+  }
+  .section-3 {
+    grid-row: span 1;
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .testimonials-section > * {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+}
+</style>
+<body>
+  <!-- navigation starts -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">MelloStreets</a>
+
+        <div class="collpase navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li class="nav-item cta"><a href="shop.html" class="nav-link">Order a cake</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- navigation ends -->
+  <main>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+
+        <!-- Section 1 -->
+        <section class="section-1">
+
+            <!-- Author -->
+            <section class="author">
+
+                <img class="author-img" src="images/image-daniel.jpg" alt="author-img">
+                <section class="author-info">
+
+                    <p class="author-name">Daniel Clifford</p>
+                    <p class="author-describtion">Verified Graduate</p>
+                </section>
+            </section>
+            <!-- Highlighted Content -->
+            <section class="highlight-content">
+
+                <p>I received a job offer mid-course, and the subjects I learned
+                    were current, if not more so, in the company I joined. I
+                    honestly feel I got every penny's worth.</p>
+            </section>
+            <!-- Content -->
+            <section class="content">
+
+                <q>I was an EMT for many years before I joined the bootcamp. I've been looking to make a
+                    transition and have heard some people who had an amazing experience here. I signed up for
+                    the free intro course and found it incredibly fun! I enrolled shortly thereafter, The next 12
+                    weeks was the best- and most grueling - time of my life. Since completing the course, I've
+                    successfully switched careers, working as a Software Engineer at a VR startup.</q>
+            </section>
+        </section>
+        <!-- Section 2 -->
+        <section class="section-2">
+
+            <!-- Author -->
+            <section class="author">
+
+                <img class="author-img" src="images/image-jonathan.jpg" alt="author-img">
+                <section class="author-info">
+
+                    <p class="author-name">Jonathan Walters</p>
+                    <p class="author-describtion">Verified Graduate</p>
+                </section>
+            </section>
+            <!-- Highlighted Content -->
+            <section class="highlight-content">
+
+                <p>The team was very
+                    supportive and kept me
+                    motivated
+                </p>
+            </section>
+            <!-- Content -->
+            <section class="content">
+
+                <q>I started as a total newble with
+                    virtually no coding skills. I now work
+                    as a mobile engineer for a big
+                    company. This was one of the best
+                    investments I've made in myself.</q>
+            </section>
+        </section>
+        <!-- Section 3 -->
+        <section class="section-3">
+
+            <!-- Author -->
+            <section class="author">
+
+                <img class="author-img" src="images/image-kira.jpg" alt="author-img">
+                <section class="author-info">
+
+                    <p class="author-name">Kira Whittle</p>
+                    <p class="author-describtion">Verified Graduate</p>
+                </section>
+            </section>
+            <!-- Highlighted Content -->
+            <section class="highlight-content">
+
+                <p>Such a life-changing
+                    experience. Highly
+                    recommended!
+                </p>
+            </section>
+            <!-- Content -->
+            <section class="content">
+
+                <q>Before joining the bootcamp, I've
+                    never written a line of code, I needed
+                    some structure from professionals
+                    who can help me learn programming
+                    step by step. I was encouraged to
+                    enroll by a former student of theirs
+                    who can only say wonderful things
+                    about the program. The entire
+                    curriculum and staff did not
+                    disappoint. They were very hands-on
+                    and I never had to wait long for
+                    assistance. The agile team project, in
+                    particular, was outstanding. It took
+                    my learning to the next level in a way
+                    that no tutorial could ever have, in
+                    fact, I've often referred to it during
+                    interviews as an example of my
+                    developent experience. It certainly
+                    helped me land a job as a full-stack
+                    developer after receiving multiple
+                    offers, 100% recommend!<q>
+            </section>
+        </section>
+        <!-- Section 4 -->
+        <section class="section-4">
+
+            <!-- Author -->
+            <section class="author">
+
+                <img class="author-img" src="images/image-jeanette.jpg" alt="author-img">
+                <section class="author-info">
+
+                    <p class="author-name">Jeanette Harmon</p>
+                    <p class="author-describtion">Verified Graduate</p>
+                </section>
+            </section>
+            <!-- Highlighted Content -->
+            <section class="highlight-content">
+
+                <p>An overall wonderful
+                    and rewarding
+                    experience
+                </p>
+            </section>
+            <!-- Content -->
+            <section class="content">
+
+                <q>Thank you for the wonderful
+                    experience! I now have a job I really
+                    enjoy, and make a good living while
+                    doing something I love.</q>
+            </section>
+        </section>
+        <!-- Section 5 -->
+        <section class="section-5">
+
+            <!-- Author -->
+            <section class="author">
+
+                <img class="author-img" src="images/image-patrick.jpg" alt="author-img">
+                <section class="author-info">
+
+                    <p class="author-name">Patrick Abrams</p>
+                    <p class="author-describtion">Verified Graduate</p>
+                </section>
+            </section>
+            <!-- Highlighted Content -->
+            <section class="highlight-content">
+
+                <p>Awesome teaching support from TAs who did the bootcamp
+                    themselves. Getting guidance from them and learning from
+                    their experiences was easy.
+                </p>
+            </section>
+            <!-- Content -->
+            <section class="content">
+
+                <q>The staff seem genuinely concerned about my progress which I find really refreshing. The
+                    program gave me the confidence necessary to be able to go out in the world and present
+                    myself as a capable junior developer. The standard is above the rest. You will get the
+                    personal attention you need from an incredible community of smart and amazing people.</q>
+            </section>
+        </section>
+    </section>
+</main>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>
